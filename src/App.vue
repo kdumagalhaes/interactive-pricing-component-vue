@@ -1,7 +1,13 @@
 <template>
-    <h1>Salut, France!</h1>
+    <Button text="Start my trial" />
 </template>
 
 <script>
-export default {}
+// atoms
+import { Button } from '@/components/atoms'
+export default {
+    components: {
+        Button,
+    },
+}
 </script>

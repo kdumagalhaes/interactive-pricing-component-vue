@@ -1,14 +1,14 @@
 <template>
-    <Toggle />
+    <BillingInfo />
 </template>
 
 <script>
 // atoms
-import { Toggle } from '@/components/atoms'
+import { BillingInfo } from '@/components/molecules'
 
 export default {
     components: {
-        Toggle,
+        BillingInfo,
     },
 }
 </script>

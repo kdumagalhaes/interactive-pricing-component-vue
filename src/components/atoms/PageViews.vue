@@ -6,7 +6,7 @@
 export default {
     props: {
         quantity: Number,
-    }
+    },
 }
 </script>
 

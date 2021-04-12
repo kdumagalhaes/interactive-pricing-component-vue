@@ -1,14 +1,14 @@
 <template>
-    <PageViews quantity="100k" />
+    <Price value="$16.00" />
 </template>
 
 <script>
 // atoms
-import { PageViews } from '@/components/atoms'
+import { Price } from '@/components/atoms'
 
 export default {
     components: {
-        PageViews,
+        Price,
     },
 }
 </script>

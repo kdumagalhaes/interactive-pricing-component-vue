@@ -1,14 +1,14 @@
 <template>
-    <RangeSlider />
+    <Toggle />
 </template>
 
 <script>
 // atoms
-import { RangeSlider } from '@/components/atoms'
+import { Toggle } from '@/components/atoms'
 
 export default {
     components: {
-        RangeSlider,
+        Toggle,
     },
 }
 </script>

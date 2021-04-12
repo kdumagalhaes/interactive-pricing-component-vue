@@ -1,16 +1,14 @@
 <template>
-    <HeroText
-        title="Simple, traffic-based pricing"
-        paragraph="Sign-up for our 30-day trial. No credit card required."
-    />
+    <PageViews quantity="100k" />
 </template>
 
 <script>
 // atoms
-import { HeroText } from '@/components/atoms'
+import { PageViews } from '@/components/atoms'
+
 export default {
     components: {
-        HeroText,
+        PageViews,
     },
 }
 </script>

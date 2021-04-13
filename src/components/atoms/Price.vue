@@ -23,7 +23,7 @@ export default {
     font-weight: $semi-bold;
 
     .price__value {
-        font-size: 2.3rem;
+        font-size: 2.8rem;
         font-weight: $extra-bold;
         color: $neutral-dark-desaturated-blue;
         margin-right: 5px;

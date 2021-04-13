@@ -1,14 +1,14 @@
 <template>
-    <BillingInfo />
+    <PriceControl />
 </template>
 
 <script>
-// atoms
-import { BillingInfo } from '@/components/molecules'
+// organisms
+import { PriceControl } from '@/components/organisms'
 
 export default {
     components: {
-        BillingInfo,
+        PriceControl,
     },
 }
 </script>

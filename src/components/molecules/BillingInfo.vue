@@ -21,6 +21,7 @@ export default {
 .billing-info {
     display: flex;
     align-items: center;
+    font-size: 0.8rem;
 
     .billing-info--monthly,
     .billing-info--yearly {
@@ -28,11 +29,11 @@ export default {
     }
 
     .billing-info--monthly {
-        margin-right: 20px;
+        margin-right: 15px;
     }
 
     .billing-info--yearly {
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .billing-info--discount {
@@ -40,8 +41,8 @@ export default {
         color: $primary-light-red;
         padding: 3px 7px;
         border-radius: 50px;
-        font-size: 0.8rem;
-        font-weight: $semi-bold;
+        font-size: 0.6rem;
+        font-weight: $extra-bold;
         margin-left: 10px;
     }
 }

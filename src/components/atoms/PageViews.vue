@@ -16,5 +16,6 @@ export default {
     font-weight: $extra-bold;
     color: $neutral-grayish-blue;
     letter-spacing: 2px;
+    font-size: 1rem;
 }
 </style>

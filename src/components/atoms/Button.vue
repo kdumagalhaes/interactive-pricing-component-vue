@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .button-tag {
-    padding: 12px 45px;
+    padding: 12px 55px;
     background-color: $neutral-dark-desaturated-blue;
     color: $neutral-medium-grayish-blue;
     border: none;

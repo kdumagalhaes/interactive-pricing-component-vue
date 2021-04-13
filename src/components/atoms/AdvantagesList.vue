@@ -19,8 +19,9 @@ export default {
 <style lang="scss" scoped>
 .advantages-list {
     .advantages-list__item {
-        line-height: 1.8rem;
+        line-height: 1.7rem;
         color: $neutral-grayish-blue;
+        font-size: 0.8rem;
 
         &::before {
             content: url('~@/assets/img/icon-check.svg');

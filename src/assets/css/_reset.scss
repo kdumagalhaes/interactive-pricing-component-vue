@@ -19,6 +19,14 @@ textarea {
     font-size: 15px;
 }
 
+body {
+    background-color: $neutral-very-pale-blue;
+    background-image: url("../img/bg-pattern.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 button {
     cursor: pointer;
 }

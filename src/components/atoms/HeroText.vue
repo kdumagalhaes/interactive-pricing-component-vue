@@ -16,7 +16,14 @@ export default {
 
 <style lang="scss" scoped>
 .hero-text {
-    text-align: center;
+    background-image: url('~@/assets/img/pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
 
     h1 {
         color: $neutral-dark-desaturated-blue;

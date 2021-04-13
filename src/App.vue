@@ -1,16 +1,14 @@
 <template>
-    <PriceControl />
-    <AdvantagesAndButton />
+    <MainContent />
 </template>
 
 <script>
-// organisms
-import { PriceControl, AdvantagesAndButton } from '@/components/organisms'
+// templates
+import { MainContent } from '@/components/templates'
 
 export default {
     components: {
-        PriceControl,
-        AdvantagesAndButton,
+        MainContent,
     },
 }
 </script>

@@ -30,7 +30,6 @@ export default {
 
 <style lang="scss" scoped>
 .price-control {
-    max-width: 590px;
     padding: 50px;
     border-bottom: 1px solid $neutral-light-grayish-blue;
 

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    list-style: none;
 }
 
 input,
@@ -19,7 +20,11 @@ textarea {
 }
 
 body {
-    background: lightblue;
+    background-color: $neutral-very-pale-blue;
+    background-image: url("../img/bg-pattern.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 button {

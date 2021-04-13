@@ -1,0 +1,7 @@
+export { default as Button } from './Button.vue'
+export { default as HeroText } from './HeroText.vue'
+export { default as PageViews } from './PageViews.vue'
+export { default as Price } from './Price.vue'
+export { default as AdvantagesList } from './AdvantagesList.vue'
+export { default as RangeSlider } from './RangeSlider.vue'
+export { default as Toggle } from './Toggle.vue'

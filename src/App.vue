@@ -1,7 +1,14 @@
 <template>
-    <h1>Salut, France!</h1>
+    <MainContent />
 </template>
 
 <script>
-export default {}
+// templates
+import { MainContent } from '@/components/templates'
+
+export default {
+    components: {
+        MainContent,
+    },
+}
 </script>

@@ -32,7 +32,6 @@ export default {
 .price-control {
     max-width: 590px;
     padding: 50px;
-    margin: 50px;
     border-bottom: 1px solid $neutral-light-grayish-blue;
 
     .price-control__values {

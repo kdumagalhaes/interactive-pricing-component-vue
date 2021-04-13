@@ -19,6 +19,7 @@ export default {
     border-radius: 50px;
     font-weight: $semi-bold;
     transition: color 0.4s;
+    height: 45px;
 
     &:hover {
         color: $neutral-very-pale-blue;

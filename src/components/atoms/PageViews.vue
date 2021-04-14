@@ -1,14 +1,6 @@
 <template>
-    <p class="page-views">{{ quantity }} pageviews</p>
+    <p class="page-views">{{ $store.state.viewsQuantity }} pageviews</p>
 </template>
-
-<script>
-export default {
-    props: {
-        quantity: Number,
-    },
-}
-</script>
 
 <style lang="scss" scoped>
 .page-views {

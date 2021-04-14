@@ -1,8 +1,8 @@
 <template>
     <div class="price-control">
         <div class="price-control__values">
-            <PageViews quantity="100k" />
-            <Price value="$16.00" />
+            <PageViews />
+            <Price />
         </div>
         <div class="price-control__controls">
             <RangeSlider class="price-control__controls--slider" />

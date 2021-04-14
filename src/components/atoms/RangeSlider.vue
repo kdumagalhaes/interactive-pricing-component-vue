@@ -5,7 +5,7 @@
         class="range-slider"
         v-model="value"
         min="1"
-        max="100"
+        max="5"
         :style="{ backgroundImage: createBackgroundString }"
     />
 </template>
@@ -14,7 +14,7 @@
 export default {
     data() {
         return {
-            value: 50,
+            value: this.$store.state.rangeSlider,
             primarySoftCyan: 'hsl(174, 77%, 80%)',
             neutralLightGrayishBlue: 'hsl(224, 65%, 95%)',
         }
@@ -22,7 +22,11 @@ export default {
 
     computed: {
         createBackgroundString() {
-            return `linear-gradient(90deg, ${this.primarySoftCyan} ${this.value}%, ${this.neutralLightGrayishBlue} ${this.value}%)`
+            return `linear-gradient(90deg, ${this.primarySoftCyan} ${
+                ((this.value - 1) / (5 - 1)) * 100
+            }%, ${this.neutralLightGrayishBlue} ${
+                ((this.value - 1) / (5 - 1)) * 100
+            }%)`
         },
     },
 }

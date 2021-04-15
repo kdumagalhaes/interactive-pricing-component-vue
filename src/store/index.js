@@ -5,19 +5,11 @@ export default createStore({
         viewsQuantity: '100K',
         price: 16,
         checked: true,
-        rangeSlider: 4,
+        rangeSlider: 3,
     },
     mutations: {
-        SET_DISCOUNT(state) {
-            const discount = 0.75
-            if (state.checked) {
-                return (state.price = state.price * discount)
-            } else {
-                return state.price
-            }
-        },
-        SET_VIEWS_QUANTITY(state) {
-            switch (state.rangeSlider) {
+        SET_VIEWS_QUANTITY(state, newValue) {
+            switch (newValue) {
                 case 1:
                     state.viewsQuantity = '10K'
                     break
@@ -37,11 +29,13 @@ export default createStore({
         },
     },
     actions: {
-        setDiscount({ commit }) {
-            commit('SET_DISCOUNT')
+        setViewsQuantity({ commit }, newValue) {
+            commit('SET_VIEWS_QUANTITY', newValue)
         },
-        setViewsQuantity({ commit }) {
-            commit('SET_VIEWS_QUANTITY')
+    },
+    getters: {
+        $setViewsQuantity(state) {
+            return state.viewsQuantity
         },
     },
 })

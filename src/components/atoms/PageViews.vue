@@ -1,6 +1,16 @@
 <template>
-    <p class="page-views">{{ $store.state.viewsQuantity }} pageviews</p>
+    <p class="page-views">{{ $setViewsQuantity }} pageviews</p>
 </template>
+
+<script>
+export default {
+    computed: {
+        $setViewsQuantity() {
+            return this.$store.getters.$setViewsQuantity
+        },
+    },
+}
+</script>
 
 <style lang="scss" scoped>
 .page-views {

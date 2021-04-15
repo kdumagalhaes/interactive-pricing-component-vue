@@ -3,7 +3,7 @@
         type="range"
         name="range-slider"
         class="range-slider"
-        v-model="value"
+        v-model="rangeSlider"
         min="1"
         max="5"
         :style="{ backgroundImage: createBackgroundString }"
@@ -20,6 +20,12 @@ export default {
         }
     },
 
+    methods: {
+        setViews(value) {
+            this.$store.dispatch('setViews', value)
+        },
+    },
+
     computed: {
         createBackgroundString() {
             return `linear-gradient(90deg, ${this.primarySoftCyan} ${
@@ -27,6 +33,15 @@ export default {
             }%, ${this.neutralLightGrayishBlue} ${
                 ((this.value - 1) / (5 - 1)) * 100
             }%)`
+        },
+
+        rangeSlider: {
+            get() {
+                return this.$store.state.rangeSlider
+            },
+            set(newValue) {
+                return this.$store.dispatch('setViewsQuantity', newValue)
+            },
         },
     },
 }

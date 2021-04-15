@@ -14,24 +14,17 @@
 export default {
     data() {
         return {
-            value: this.$store.state.rangeSlider,
             primarySoftCyan: 'hsl(174, 77%, 80%)',
             neutralLightGrayishBlue: 'hsl(224, 65%, 95%)',
         }
     },
 
-    methods: {
-        setViews(value) {
-            this.$store.dispatch('setViews', value)
-        },
-    },
-
     computed: {
         createBackgroundString() {
             return `linear-gradient(90deg, ${this.primarySoftCyan} ${
-                ((this.value - 1) / (5 - 1)) * 100
+                ((this.rangeSlider - 1) / (5 - 1)) * 100
             }%, ${this.neutralLightGrayishBlue} ${
-                ((this.value - 1) / (5 - 1)) * 100
+                ((this.rangeSlider - 1) / (5 - 1)) * 100
             }%)`
         },
 
@@ -40,7 +33,10 @@ export default {
                 return this.$store.state.rangeSlider
             },
             set(newValue) {
-                return this.$store.dispatch('setViewsQuantity', newValue)
+                return this.$store.dispatch(
+                    'setViewsQuantityAndPrice',
+                    newValue
+                )
             },
         },
     },

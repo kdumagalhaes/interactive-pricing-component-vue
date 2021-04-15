@@ -18,10 +18,10 @@ export default {
             checked: this.$store.state.checked,
         }
     },
+
     methods: {
         setDiscount() {
-            this.$store.dispatch('setDiscount')
-            console.log(this.checked)
+            this.$store.dispatch('setDiscount', this.checked)
         },
     },
 }

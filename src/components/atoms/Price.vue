@@ -1,12 +1,18 @@
 <template>
     <div class="price">
-        <span class="price__value"> ${{ $store.state.price }}.00 </span>
+        <span class="price__value"> ${{ setPrice }}.00 </span>
         / month
     </div>
 </template>
 
 <script>
-export default {}
+export default {
+    computed: {
+        setPrice() {
+            return this.$store.state.price
+        },
+    },
+}
 </script>
 
 <style lang="scss" scoped>

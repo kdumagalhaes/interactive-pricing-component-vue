@@ -9,7 +9,8 @@
 export default {
     computed: {
         setPrice() {
-            return this.$store.state.price
+            const finalPriceArray = this.$store.getters.$setPrice
+            return finalPriceArray
         },
     },
 }

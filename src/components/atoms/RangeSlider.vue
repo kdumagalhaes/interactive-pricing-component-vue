@@ -4,8 +4,8 @@
         name="range-slider"
         class="range-slider"
         v-model="rangeSlider"
-        min="1"
-        max="5"
+        min="0"
+        max="4"
         :style="{ backgroundImage: createBackgroundString }"
     />
 </template>
@@ -22,9 +22,9 @@ export default {
     computed: {
         createBackgroundString() {
             return `linear-gradient(90deg, ${this.primarySoftCyan} ${
-                ((this.rangeSlider - 1) / (5 - 1)) * 100
+                (this.rangeSlider / 4) * 100
             }%, ${this.neutralLightGrayishBlue} ${
-                ((this.rangeSlider - 1) / (5 - 1)) * 100
+                (this.rangeSlider / 4) * 100
             }%)`
         },
 

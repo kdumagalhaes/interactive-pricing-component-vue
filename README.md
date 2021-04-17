@@ -1,24 +1,21 @@
-# interactive-pricing-component
+# Interactive pricing component using VueJS!
 
-## Project setup
-```
-yarn install
-```
+### The challenge
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Users should be able to:
 
-### Compiles and minifies for production
-```
-yarn build
-```
+-   View the optimal layout for the app depending on their device's screen size
+-   See hover states for all interactive elements on the page
+-   Use the slider and toggle to see prices for different page view numbers
 
-### Lints and fixes files
-```
-yarn lint
-```
+![](screencapture.png)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## My tools:
+
+-   [x] VueJS;
+-   [x] VueX;
+-   [x] SCSS;
+-   [x] BEM CSS;
+-   [x] Atomic Design principles;
+
+**You can see the live demo and give feedbacks on the [FrontendMentor's page](https://www.frontendmentor.io/solutions/interactive-pricing-component-using-vuejs--4V8eQnpE).**

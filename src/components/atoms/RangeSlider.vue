@@ -1,8 +1,8 @@
 <template>
     <div class="range">
-        <label for="range">Choose the range views</label>
+        <label for="views-range-slider">Choose the range views</label>
         <input
-            id="range"
+            id="views-range-slider"
             type="range"
             name="range-slider"
             class="range-slider"

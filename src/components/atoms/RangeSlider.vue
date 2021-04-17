@@ -47,6 +47,7 @@ export default {
 .range-slider {
     -webkit-appearance: none;
     width: 100%;
+    max-width: 500px;
     height: 10px;
     border-radius: 50px;
     background: linear-gradient(

@@ -23,10 +23,18 @@ export default {
 
 <style lang="scss" scoped>
 .advantages-and-button {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 30px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media only screen and (max-width: $mobile) {
+    .advantages-and-button {
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 </style>

@@ -6,6 +6,7 @@ export default createStore({
         prices: [8, 12, 16, 24, 32],
         checked: false,
         rangeSlider: 2,
+        discount: 0.75,
     },
     mutations: {
         SET_VIEWS_QUANTITY_AND_PRICE(state, newValue) {
@@ -53,7 +54,7 @@ export default createStore({
             return state.viewsQuantity
         },
         $setPrice(state) {
-            const discount = 0.75
+            const discount = state.discount
             const isChecked = state.checked
             const pricesWithoutDiscount = state.prices
             const pricesWithDiscount = pricesWithoutDiscount.map(

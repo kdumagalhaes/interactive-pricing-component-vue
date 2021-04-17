@@ -12,7 +12,7 @@ export default {
 
 <style lang="scss" scoped>
 .button-tag {
-    padding: 12px 55px;
+    padding: 0 55px;
     background-color: $neutral-dark-desaturated-blue;
     color: $neutral-medium-grayish-blue;
     border: none;
@@ -23,6 +23,14 @@ export default {
 
     &:hover {
         color: $neutral-very-pale-blue;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .button-tag {
+        padding: 0 45px;
+        font-size: 0.7rem;
+        height: 40px;
     }
 }
 </style>

@@ -9,6 +9,12 @@
             <BillingInfo class="price-control__controls--billing-info" />
         </div>
     </div>
+    <div class="price-control--mobile">
+        <PageViews class="price-control--mobile__page-views" />
+        <RangeSlider class="price-control--mobile__slider" />
+        <Price class="price-controle--mobile__price" />
+        <BillingInfo class="price-control--mobile__billing-info" />
+    </div>
 </template>
 
 <script>
@@ -32,6 +38,7 @@ export default {
 .price-control {
     padding: 50px;
     border-bottom: 1px solid $neutral-light-grayish-blue;
+    display: block;
 
     .price-control__values {
         display: flex;
@@ -51,6 +58,28 @@ export default {
 
         .price-control__controls--billing-info {
             margin: 0 40px 0 0;
+        }
+    }
+}
+
+.price-control--mobile {
+    display: none;
+}
+
+@media only screen and (max-width: $mobile) {
+    .price-control {
+        display: none;
+    }
+    .price-control--mobile {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .price-control--mobile__page-views,
+        .price-control--mobile__slider,
+        .price-controle--mobile__price {
+            margin-bottom: 30px;
         }
     }
 }

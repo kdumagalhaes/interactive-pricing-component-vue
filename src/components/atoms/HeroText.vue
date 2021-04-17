@@ -24,6 +24,7 @@ export default {
     align-items: center;
     justify-content: center;
     height: 150px;
+    margin: 20px 0;
 
     h1 {
         color: $neutral-dark-desaturated-blue;
@@ -34,6 +35,20 @@ export default {
     p {
         color: $neutral-grayish-blue;
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .hero-text {
+        h1 {
+            font-size: 1.2rem;
+        }
+        p {
+            text-align: center;
+            width: 200px;
+            line-height: 22px;
+            font-size: 0.8rem;
+        }
     }
 }
 </style>

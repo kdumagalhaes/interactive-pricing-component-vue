@@ -30,4 +30,12 @@ export default {
         margin-right: 5px;
     }
 }
+
+@media only screen and (max-width: $mobile) {
+    .price {
+        .price__value {
+            font-size: 1.8rem;
+        }
+    }
+}
 </style>

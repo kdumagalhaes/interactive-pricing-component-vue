@@ -67,9 +67,16 @@ export default {
     .toggle__input:checked + .toggle__slider {
         background-color: $primary-strong-cyan;
     }
+}
 
-    .toggle__input:checked + .toggle__slider::before {
-        transform: translateX(26px);
+@media only screen and (max-width: $mobile) {
+    .toggle {
+        width: 40px;
+        height: 22px;
+
+        .toggle__input:checked + .toggle__slider::before {
+            transform: translateX(16px);
+        }
     }
 }
 </style>

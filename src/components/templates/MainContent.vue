@@ -32,8 +32,10 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
     height: 100vh;
+    margin-bottom: 30px;
 
     .main-content--price-module {
         background-color: $neutral-very-pale-blue;
@@ -42,6 +44,15 @@ export default {
         border-radius: 10px;
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
             0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .main-content {
+        .main-content--price-module {
+            max-width: 320px;
+            padding: 20px;
+        }
     }
 }
 </style>

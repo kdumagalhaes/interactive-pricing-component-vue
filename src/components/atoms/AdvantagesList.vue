@@ -29,4 +29,11 @@ export default {
         }
     }
 }
+
+@media only screen and (max-width: $mobile) {
+    .advantages-list {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+}
 </style>

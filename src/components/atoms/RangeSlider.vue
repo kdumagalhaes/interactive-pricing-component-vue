@@ -3,9 +3,9 @@
         type="range"
         name="range-slider"
         class="range-slider"
-        v-model="value"
-        min="1"
-        max="100"
+        v-model="rangeSlider"
+        min="0"
+        max="4"
         :style="{ backgroundImage: createBackgroundString }"
     />
 </template>
@@ -14,7 +14,6 @@
 export default {
     data() {
         return {
-            value: 50,
             primarySoftCyan: 'hsl(174, 77%, 80%)',
             neutralLightGrayishBlue: 'hsl(224, 65%, 95%)',
         }
@@ -22,7 +21,23 @@ export default {
 
     computed: {
         createBackgroundString() {
-            return `linear-gradient(90deg, ${this.primarySoftCyan} ${this.value}%, ${this.neutralLightGrayishBlue} ${this.value}%)`
+            return `linear-gradient(90deg, ${this.primarySoftCyan} ${
+                (this.rangeSlider / 4) * 100
+            }%, ${this.neutralLightGrayishBlue} ${
+                (this.rangeSlider / 4) * 100
+            }%)`
+        },
+
+        rangeSlider: {
+            get() {
+                return this.$store.state.rangeSlider
+            },
+            set(newValue) {
+                return this.$store.dispatch(
+                    'setViewsQuantityAndPrice',
+                    newValue
+                )
+            },
         },
     },
 }

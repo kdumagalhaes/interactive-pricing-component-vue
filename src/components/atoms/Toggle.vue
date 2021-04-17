@@ -1,12 +1,30 @@
 <template>
     <label class="toggle">
-        <input class="toggle__input" type="checkbox" name="toggle" />
+        <input
+            class="toggle__input"
+            type="checkbox"
+            name="toggle"
+            v-model="checked"
+            @change="setDiscount"
+        />
         <span class="toggle__slider"></span>
     </label>
 </template>
 
 <script>
-export default {}
+export default {
+    data() {
+        return {
+            checked: this.$store.state.checked,
+        }
+    },
+
+    methods: {
+        setDiscount() {
+            this.$store.dispatch('setDiscount', this.checked)
+        },
+    },
+}
 </script>
 
 <style lang="scss" scoped>

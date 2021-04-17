@@ -1,11 +1,13 @@
 <template>
-    <p class="page-views">{{ quantity }} pageviews</p>
+    <p class="page-views">{{ $setViewsQuantity }} pageviews</p>
 </template>
 
 <script>
 export default {
-    props: {
-        quantity: Number,
+    computed: {
+        $setViewsQuantity() {
+            return this.$store.getters.$setViewsQuantity
+        },
     },
 }
 </script>

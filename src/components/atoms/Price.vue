@@ -1,16 +1,17 @@
 <template>
     <div class="price">
-        <span class="price__value">
-            {{ value }}
-        </span>
+        <span class="price__value"> ${{ setPrice }}.00 </span>
         / month
     </div>
 </template>
 
 <script>
 export default {
-    props: {
-        value: Number,
+    computed: {
+        setPrice() {
+            const finalPriceArray = this.$store.getters.$setPrice
+            return finalPriceArray
+        },
     },
 }
 </script>
